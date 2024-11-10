@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto Mono", monospace;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1e1e1e;
+      overflow: hidden;
+    }
+
+    .main {
+      width: 800px;
+      height: 600px;
+      background-color: #2c2c2c;
+      border: 2px solid #3d3d3d;
+      border-radius: 10px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .image {
+      width: 300px;
+      height: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title {
+      color: #ff00ff;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 60px;
+      text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    }
+
+    .description {
+      color: #00ffff;
+      text-align: center;
+      margin-top: 10px;
+      text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 60px;
+      border-radius: 30px;
+      background: linear-gradient(to right, #ff00ff, #00ffff);
+      box-shadow: 0 0 40px rgba(255, 0, 255, 0.5);
+    }
+
+    .talk {
+      background: transparent;
+      outline: none;
+      border: none;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .talk i {
+      font-size: 30px;
+      color: #1e1e1e;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .content {
+      color: #1e1e1e;
+      font-size: 24px;
+      margin-right: 20px;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .audio-visualizer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .audio-visualizer .bar {
+      width: 10px;
+      height: 10px;
+      background-color: #ff00ff;
+      margin: 0 5px;
+      border-radius: 5px;
+      
+    }
+
+    @keyframes audioVisualizer {
+      0% {
+        height: 10px;
+      }
+      50% {
+        height: 40px;
+      }
+      100% {
+        height: 10px;
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
